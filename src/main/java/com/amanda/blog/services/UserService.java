@@ -1,6 +1,7 @@
 package com.amanda.blog.services;
 
 import com.amanda.blog.domain.User;
+import com.amanda.blog.dto.UserDTO;
 import com.amanda.blog.exceptions.ObjectNotFoundException;
 import com.amanda.blog.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,5 +23,13 @@ public class UserService {
     public User findById(String id) {
         Optional<User> obj = repository.findById(id);
         return obj.orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado"));
+    }
+
+    public User insert(User user) {
+        return repository.insert(user);
+    }
+
+    public User fromDTO(UserDTO userDTO) {
+        return new User(userDTO.getId(), userDTO.getName(), userDTO.getEmail());
     }
 }
