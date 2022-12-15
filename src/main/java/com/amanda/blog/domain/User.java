@@ -23,6 +23,7 @@ public class User implements Serializable {
         this.email = email;
     }
 
+
     public String getId() {
         return id;
     }
@@ -46,6 +47,7 @@ public class User implements Serializable {
     public void setEmail(String email) {
         this.email = email;
     }
+
 
     @Override
     public boolean equals(Object o) {
