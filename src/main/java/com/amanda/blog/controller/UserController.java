@@ -1,4 +1,4 @@
-package com.amanda.blog.Controller;
+package com.amanda.blog.controller;
 
 import com.amanda.blog.domain.Post;
 import com.amanda.blog.domain.User;
