@@ -1,5 +1,6 @@
 package com.amanda.blog.Controller;
 
+import com.amanda.blog.domain.Post;
 import com.amanda.blog.domain.User;
 import com.amanda.blog.dto.UserDTO;
 import com.amanda.blog.services.UserService;
@@ -52,5 +53,11 @@ public class UserController {
         obj.setId(id);
         obj = service.update(obj);
         return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/{id}/posts")
+    public ResponseEntity<List<Post>> findPosts(@PathVariable String id) {
+        User obj = service.findById(id);
+        return ResponseEntity.ok().body(obj.getPost());
     }
 }
