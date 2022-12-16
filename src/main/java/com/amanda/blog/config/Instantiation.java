@@ -13,7 +13,8 @@ import java.text.SimpleDateFormat;
 import java.util.Arrays;
 
 @Configuration
-public class Instantiation implements CommandLineRunner {
+public class Instantiation implements CommandLin
+eRunner {
 
     SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
