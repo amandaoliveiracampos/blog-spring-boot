@@ -1,11 +1,11 @@
-package com.amanda.blog.config;
+package com.amanda.blog.configs;
 
-import com.amanda.blog.domain.Post;
-import com.amanda.blog.domain.User;
-import com.amanda.blog.dto.AuthorDTO;
-import com.amanda.blog.dto.CommentDTO;
-import com.amanda.blog.repository.PostRepository;
-import com.amanda.blog.repository.UserRepository;
+import com.amanda.blog.dtos.AuthorDTO;
+import com.amanda.blog.dtos.CommentDTO;
+import com.amanda.blog.entities.Post;
+import com.amanda.blog.entities.User;
+import com.amanda.blog.repositories.PostRepository;
+import com.amanda.blog.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;

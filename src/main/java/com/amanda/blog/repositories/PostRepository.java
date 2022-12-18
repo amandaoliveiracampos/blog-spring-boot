@@ -1,6 +1,6 @@
-package com.amanda.blog.repository;
+package com.amanda.blog.repositories;
 
-import com.amanda.blog.domain.Post;
+import com.amanda.blog.entities.Post;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;

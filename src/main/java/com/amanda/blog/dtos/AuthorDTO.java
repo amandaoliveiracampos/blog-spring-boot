@@ -1,6 +1,6 @@
-package com.amanda.blog.dto;
+package com.amanda.blog.dtos;
 
-import com.amanda.blog.domain.User;
+import com.amanda.blog.entities.User;
 
 import java.util.Objects;
 

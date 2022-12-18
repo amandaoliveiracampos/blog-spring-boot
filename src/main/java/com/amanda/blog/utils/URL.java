@@ -1,4 +1,4 @@
-package com.amanda.blog.controller.util;
+package com.amanda.blog.utils;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;

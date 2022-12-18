@@ -1,7 +1,7 @@
-package com.amanda.blog.domain;
+package com.amanda.blog.entities;
 
-import com.amanda.blog.dto.AuthorDTO;
-import com.amanda.blog.dto.CommentDTO;
+import com.amanda.blog.dtos.AuthorDTO;
+import com.amanda.blog.dtos.CommentDTO;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 

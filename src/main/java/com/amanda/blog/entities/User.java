@@ -1,4 +1,4 @@
-package com.amanda.blog.domain;
+package com.amanda.blog.entities;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;

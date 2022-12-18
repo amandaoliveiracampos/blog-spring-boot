@@ -1,4 +1,4 @@
-package com.amanda.blog.dto;
+package com.amanda.blog.dtos;
 
 import java.io.Serializable;
 import java.util.Date;
