@@ -24,7 +24,7 @@
 
 ## Back-end
 
-Pré-requisitos: Java 11 e MongoDB
+Pré-requisitos: Java 11, Maven e MongoDB
 
 ```bash
 # clonar repositório
