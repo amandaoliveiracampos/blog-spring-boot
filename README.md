@@ -29,7 +29,7 @@ Pré-requisitos: Java 11
 git clone https://github.com/amandaoliveiracampos/blog-spring-boot
 
 # executar o projeto
-Na sua IDE abra a classe Application.java e execute.
+mvn spring-boot:run
 ```
 
 # Autor
