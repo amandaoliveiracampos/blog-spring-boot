@@ -17,12 +17,14 @@
 ## Back-end
 
 - Java
+- Spring-boot 
+- MongoDB
 
 # Como executar o projeto
 
 ## Back-end
 
-Pré-requisitos: Java 11
+Pré-requisitos: Java 11 e MongoDB
 
 ```bash
 # clonar repositório
