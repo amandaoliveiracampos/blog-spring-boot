@@ -1,15 +1,16 @@
 package com.amanda.blog.entities;
 
-import com.amanda.blog.dtos.AuthorDTO;
-import com.amanda.blog.dtos.CommentDTO;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import com.amanda.blog.dtos.AuthorDTO;
+import com.amanda.blog.dtos.CommentDTO;
 
 @Document
 public class Post implements Serializable {
@@ -18,9 +19,8 @@ public class Post implements Serializable {
     public Date date;
     private String title;
 
-    private String bory;
+    private String body;
     private AuthorDTO author;
-
 
     private List<CommentDTO> comments = new ArrayList<>();
 
@@ -31,7 +31,7 @@ public class Post implements Serializable {
         this.id = id;
         this.date = date;
         this.title = title;
-        this.bory = bory;
+        this.body = bory;
         this.author = author;
     }
 
@@ -68,11 +68,11 @@ public class Post implements Serializable {
     }
 
     public String getBory() {
-        return bory;
+        return body;
     }
 
     public void setBory(String bory) {
-        this.bory = bory;
+        this.body = bory;
     }
 
     public List<CommentDTO> getComments() {
@@ -85,14 +85,17 @@ public class Post implements Serializable {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
         Post post = (Post) o;
-        return id.equals(post.id) && Objects.equals(date, post.date) && Objects.equals(title, post.title) && Objects.equals(bory, post.bory);
+        return id.equals(post.id) && Objects.equals(date, post.date) && Objects.equals(title, post.title)
+                && Objects.equals(body, post.body);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, date, title, bory);
+        return Objects.hash(id, date, title, body);
     }
 }
