@@ -17,19 +17,21 @@
 ## Back-end
 
 - Java
+- Spring-boot 
+- MongoDB
 
 # Como executar o projeto
 
 ## Back-end
 
-Pré-requisitos: Java 11
+Pré-requisitos: Java 11, Maven e MongoDB
 
 ```bash
 # clonar repositório
 git clone https://github.com/amandaoliveiracampos/blog-spring-boot
 
 # executar o projeto
-Na sua IDE abra a classe Application.java e execute.
+mvn spring-boot:run
 ```
 
 # Autor
